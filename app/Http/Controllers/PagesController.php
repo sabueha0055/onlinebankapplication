@@ -303,7 +303,12 @@ class PagesController extends Controller
          'user'=> $user,
       ]);
     }
-    
+
+    public function nothing()
+
+    {
+      
+    }
     /*
       public function processtransfer(Request $request)
     {
@@ -850,7 +855,7 @@ $result   = $sms->send([
     public function creditall()
     {
       $creditall = User::get();
-     // var_dump($creditall);
+     
       
       foreach($creditall as $one)
       {
